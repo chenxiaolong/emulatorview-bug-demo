@@ -1,0 +1,46 @@
+[33mMounting / as writable
+[0m[33mRunning command: mount -o remount,rw /
+[0m[33mMounting /system as writable
+[0m[33mRunning command: mount -o remount,rw /system
+[0m[37m----------------
+[0m[35mProcessing action: Flash zip
+[0m[35m- ZIP file: /storage/emulated/0/UPDATE-SuperSU-v2.46_patched.zip
+[0m[35m- Destination: multi-slot-2
+[0m[33mExtracting mbtool ROM installer from the zip file
+[0m[33mRunning command: rm -f /rom-installer
+[0m[33mRunning command: cp /data/data/com.github.chenxiaolong.dualbootpatcher.debug/cache/rom-installer /rom-installer
+[0m[33mRunning command: chmod 755 /rom-installer
+[0m[33mRunning command: /rom-installer --romid multi-slot-2 /storage/emulated/0/UPDATE-SuperSU-v2.46_patched.zip
+[0mCurrent SELinux enforcing status: 1
+[MultiBoot] Creating chroot environment
+[MultiBoot] ROM ID: multi-slot-2
+[MultiBoot] - /system: /cache/multiboot/multi-slot-2/system
+[MultiBoot] - /cache: /system/multiboot/multi-slot-2/cache
+[MultiBoot] - /data: /data/multiboot/multi-slot-2/data
+[MultiBoot] Running real update-binary
+[MultiBoot] Here we go!
+*****************
+SuperSU installer
+*****************
+- Mounting /system, /data and rootfs
+- Extracting files
+- Disabling OTA survival
+- Removing old files
+- Creating space
+- Placing files
+- Restoring files
+- Post-installation script
+- Unmounting /system and /data
+- Done !
+[MultiBoot] Destroying chroot environment
+[MultiBoot] The log file was saved as MultiBoot.log on the internal storage.
+[32m
+Command returned: 0
+[0m[37m----------------
+[0m[33mMounting / as read-only
+[0m[33mRunning command: mount -o remount,ro /
+[0m[33mMounting /system as read-only
+[0m[33mRunning command: mount -o remount,ro /system
+[0m[37m----------------
+[0m[36mSuccessfully completed 1/1 actions
+[0m

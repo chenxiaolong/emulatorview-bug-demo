@@ -1,0 +1,4 @@
+include ':app'
+include ":emulatorview"
+
+project(":emulatorview").projectDir = file("Android-Terminal-Emulator/emulatorview")
